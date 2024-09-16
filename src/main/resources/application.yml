@@ -1,0 +1,36 @@
+spring:
+ application:
+  name: '[spring-oauth2-login]'
+  
+ security:
+    user:
+      name: user
+      password: password
+#Github Login
+    oauth2:
+      client:
+        registration:
+         github:
+          client-id: Iv23liW2ynWh2kyS1Hn1
+          client-secret: 9144453a584df57b368b5d6ba2551dffb975e6ae
+          
+       
+okta:
+  oauth2:     
+    issuer: https://dev-48558997.okta.com
+    client-id: 0oae887rw3hiIboIq5d7
+    client-secret: 7zuXCM2k40HfRNcSwPTwSZJN8gmWCj3WS-T9RE_WKZ3zxpoJHV1cc2SJ-S6K-2xi
+    redirect-uri: /authorization-code/callback
+    
+server:
+ port: 8765
+ 
+
+
+
+#Google Login
+
+
+logging:
+  level: 
+   '[org.springframework.security]': TRACE
